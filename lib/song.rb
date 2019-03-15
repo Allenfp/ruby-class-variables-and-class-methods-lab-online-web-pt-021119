@@ -35,4 +35,13 @@ class Song
     return_hash
   end
 
+  def self.artist_count
+    return_hash = Hash.new
+    @@artists.uniq.each do |artist|
+      return_hash[artist] = @@artists.count(artist)
+    end
+    return_hash
+  end
+
+
 end
