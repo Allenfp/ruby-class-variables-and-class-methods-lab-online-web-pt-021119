@@ -32,6 +32,7 @@ class Song
     @@genres.uniq.each do |genre|
       return_hash[genre] = @@genres.count(genre)
     end
+    return_hash
   end
 
 end
