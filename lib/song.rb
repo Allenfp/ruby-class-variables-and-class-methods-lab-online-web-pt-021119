@@ -15,7 +15,7 @@ class Song
     @@genres.push(genre)
   end
 
-  def count()
+  def count
     @@count
   end
 
